@@ -62,8 +62,14 @@ int main()
 // NOTE:
 	// .0 or . - no characters will be printed after the decimal
 	// .1      - only one digit will be printed after decimal
-    printf ("floats: %4.2f, %+.e, %+.2e, %+.0e, %E \n", 
-    	3.1416, 3.1416, 3.1416, 3.1416, 3.1416);
+	// %04.2f - means only 4 digits will be printed including the dot and after
+	// decimal only two digits will be printed. 
+
+	// if the width specified for digits before the decimal is smaller than the
+	// width of the float, then it is auto adjusted, but it only prints the
+	// specified number of digits after decimal.
+    printf("floats: %05.2f, %3.2f, %+.e, %+.2e, %+.0e, %E \n", 
+    	3.1416, 10043.435, 3.1416, 3.1416, 3.1416, 3.1416);
     printf("%3.4f\n", 2111.397);
     
 	return 0;
