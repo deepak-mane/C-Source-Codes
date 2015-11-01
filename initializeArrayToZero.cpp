@@ -1,3 +1,8 @@
+/*
+*	Using memset() of cstring to initialize array elements to zero
+*/
+
+
 #include <iostream>
 #include <cstring>
 
